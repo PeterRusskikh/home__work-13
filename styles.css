@@ -1,0 +1,386 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		 url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+		 url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gilroy-Medium.woff') format('woff'); 
+	font-weight: 500;
+	font-style: normal;
+  }
+  @font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		 url('../fonts/Gilroy-Bold.ttf') format('truetype'),
+		 url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gilroy-Bold.woff') format('woff'); 
+	font-weight: 700;
+	font-style: normal;
+  }
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.header-logo {
+  width: 100px;
+  margin-top: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ee5757;
+  border: 1px solid;
+  padding: 0px 10px;  
+}
+.header-naming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-naming p:last-of-type {
+  font-size: 8px;
+  width: 50%;
+}
+.header-about p {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.table-pizza h4 {
+  color: #ee5757;
+  font-weight: 700;
+}
+.table-pizza i {
+  color: black;
+  font-weight: 700;
+}
+.table-pizza td {
+  font-weight: 700;  
+}
+header p,
+.header-logo,
+.header-list-item {
+  transition: all 0.5s;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.name-pizza {
+ font-size: 50px;
+ font-weight: 700;
+}
+
+.header-logo:hover {
+  transform: scale(1.2);
+}
+
+header p:first-of-type:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+.header-naming p:last-of-type:hover {
+  transform: scale(1.2);
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+
+header .header-list li {
+  display: inline-block;
+  list-style: none;
+}
+header .header-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .header-list li:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.burger {
+  display: none;
+}
+
+/* main */
+
+.pizza {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.table-pizza {
+  border-spacing: 40px 20px;
+ 
+}
+
+.table-pizza td img {
+  width: 300px;
+}
+
+main input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+.table-pizza tr td:last-of-type {
+  width: 300px;
+  text-align: center;
+}
+
+.form {
+  background-color: #ee5757;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*  */
+.form form input,
+.textarea-order,
+.textarea-sum,
+.div-sum {
+  box-sizing: border-box;
+  width: 250px;
+  
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 6px 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form form input[type="reset"],
+.form form input[type="submit"] {
+  width: 140px;
+}
+.form form input[type="reset"] {
+  margin-right: 15px;
+}
+
+.background-white {
+  background-color: #ffffff !important;
+  border: 1px solid #c0c0c0;
+}
+
+.form form label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.your-order,
+.your-order-sum {
+  text-align: center;
+}
+.textarea-order,
+.textarea-sum,
+.div-sum {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+}
+.your-order {
+  margin: 0;
+}
+.reset-and-sent input:hover {
+  background-color: #e9e8e8;
+}
+.textarea-sum {
+  height: 25.5px;
+}
+
+.div-sum span {
+  color: black;
+  font-weight: 700;
+}
+.your-order {
+  color: black;
+  font-weight: 700;
+}
+form label {
+  color: black;
+  font-weight: 700;
+} 
+footer {
+  background-color: white;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+.footer h1 {
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .pizza {
+    margin-top: 30px;
+  }
+  .cost1, .cost2, .cost3 {
+    font-size: 15px;
+  }
+  .burger {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(250, 235, 215, 0.5);
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
+  .burger span,
+  .burger::before,
+  .burger::after {
+    width: 30px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .burger span {
+    top: 50%;
+    left: 23%;
+  }
+  .burger::before {
+    content: "";
+    top: 30%;
+    left: 23%;
+  }
+
+  .burger::after {
+    content: "";
+    top: 70%;
+    left: 23%;
+  }
+  .exit span {
+    display: none;
+  }
+  .exit::before {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .exit::after {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+  .header-list {
+    position: absolute;
+    font-size: 24px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    left: -610px;
+    top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+  }
+  .header-list-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  header {
+    position: relative;
+    justify-content: space-between;
+  }
+  header div:first-of-type {
+    margin-left: 20px;
+  }
+
+  .enabled {
+    left: 0;
+    top: 91px;
+    background-color: #ee5757;
+    padding: 20px;
+    width: 100%;
+    height: 280px;
+  }
+  .header-list-item {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    color: black;  
+  }
+  .header-list-item-big {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    color: black;
+  }
+  .table-pizza td img {
+    width: 150px;
+  }
+  .table-pizza tr td:last-of-type {
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .name-pizza {
+    display: none;
+  }
+  .main-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .table-pizza {
+    border-spacing: 20px;
+  }
+
+  .second-li,
+  .third-li {
+    margin-top: 30px;
+  }
+
+  .table-pizza tbody tr td:nth-of-type(3) {
+    font-size: 8px;
+    width: 100%;
+  }
+  .table-pizza tbody tr td:last-of-type {
+    font-size: 12px;
+  }
+  th {
+    font-size: 12px;
+  }
+  .table-pizza td img {
+    width: 100px;
+  }
+  main input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .form form input[type="reset"],
+  .form form input[type="submit"] {
+    width: 110px;
+    font-size: 12px;
+  }
+  .table-pizza {
+    border-spacing: 0;
+  }
+}

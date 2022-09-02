@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+  </head>
+    <body>
+      <header>
+        <div class="top-head"><img src="img/logo.png" alt="logo" class="header-logo"/></div>
+        <h1 class="name-pizza">PlazaPizza</h1>
+        <ul class="header-list">
+          <li class="header-list-item"><a href="#" target="_blank">Заказать</a></li>
+          <li class="header-list-item"><a href="#" target="_blank">Акции</a></li>
+          <li class="header-list-item"><a href="#" target="_blank">О нас</a></li>
+        </ul>
+        <div class="burger"><span></span></div>
+      </header>
+      <main class="pizza">
+      <table class="table-pizza">
+        <tr>
+          <th>Выбрать</th>
+          <th>Внешний вид</th>
+          <th>Описание</th>
+          <th>Цена</th>
+        </tr>
+        <tr>
+          <td>
+            <form action="#">
+              <input type="checkbox" class="pizza meat-pizza added">
+            </form>
+            </td>
+          <td>
+            <img src="img/pizza1.jpeg" alt="pizza-1">
+          </td>
+          <td> <h4>Песто</h3>
+           <i>30 см, традиционное тесто, 630 г Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, соус альфредо </i>
+        </td>
+        <td class="cost1">100 р.</td>
+        </tr>
+
+        <tr>
+          <td>
+            <form action="#">
+            <input type="checkbox" class="pizza turkey-pizza">
+          </form>
+        </td>
+          <td><img src="img/pizza2.jpeg" alt=""></td>
+          <td>
+            <h4>Индейка с овощами гриль</h4><i>30 см, традиционное тесто, 640 г Пастрами из индейки, овощи-гриль, кубики брынзы, моцарелла, томатный соус</i>
+          </td>
+          <td class="cost2">200 р.</td>
+        </tr>
+        <tr>
+          <td>
+            <form action="#">
+            <input type="checkbox" name="checkbox" class="pizza pesto-pizza">
+          </form>
+        </td>
+          <td>
+            <img src="img/pizza3.jpeg" alt="">
+          </td>
+          <td>
+           <h4> Мясной МиксПесто</h4>
+           <i>30 см, традиционное тесто, 560 г Пастрами из индейки, острая чоризо, пикантная пепперони, бекон, моцарелла, томатный соус</i>
+          </td>
+         <td class="cost3">300 р.</td>
+        </tr>
+      </table>
+      </main>
+      <div class="form">
+        <p class="your-order">Сумма заказа</p>
+        <div class="div-sum">
+          <span class="sum-1">0</span><span style="text-align: center;"> р.</span>
+        </div>
+        <form action="#"><label>Имя<input type="text" class="input" required></label>
+        <label>Телефон<input type="tel" class="input phone" id="phone" name="phone" required></label>
+        <label>mail<input type="email" class="input" id="email"></label>
+        <div class="reset-and-sent" >
+          <input type="reset" value="Сбросить данные">
+          <input type="submit" value="Отправить">
+        </div>
+      </div>
+
+      <footer class="footer">
+        <h1>PlazzaPizza 2022</h1>
+      </footer>
+      <script src="js/jquery-3.6.0.min.js">
+      </script>
+      <script src="js/jquery.maskedinput.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+</html>
